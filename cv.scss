@@ -1,0 +1,233 @@
+$color-one: #047fb3e0;
+$color-two: #02497fc9;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    // width: 2480px;
+    // height: 3508px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100%;
+    background: #f3f3f3;
+}
+
+h1,
+h2,
+h3 {
+    color: #444;
+}
+
+.wrapper {
+    display: block;
+    width: 663px;
+    height: 931px;
+    border: 1px solid #c9c9c9;
+    margin: auto;
+    overflow: hidden;
+}
+
+.main {
+    margin-bottom: 30px;
+}
+
+.header {
+    position: relative;
+    height: 20%;
+    width: 100%;
+    margin-bottom: 30px;
+
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: $color-one;
+        clip-path: polygon(0 -50%, 0 100%, 74% 25%);
+    }
+
+    &::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        display: block;
+        background: $color-two;
+        position: absolute;
+        top: 0;
+        clip-path: polygon(100% 0%, 57% 0%, 100% 45%);
+    }
+
+    .profile {
+        position: absolute;
+        width: 20%;
+        overflow: hidden;
+        border-radius: 50%;
+        border: 5px solid #fff;
+        bottom: -15px;
+        left: 28px;
+    }
+}
+
+
+.h-title {
+    position: absolute;
+    right: 24px;
+    bottom: -10px;
+    text-transform: uppercase;
+    text-align: center;
+
+    &__small {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    &__big {
+        font-size: 40px;
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+}
+
+.middle {
+    & * {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    position: relative;
+
+
+    .title {
+        font-size: 1.25rem;
+        margin-bottom: .625rem;
+        color: $color-one;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    i {
+        padding-right: .5rem;
+        color: $color-one;
+    }
+
+    &__left {
+        width: 40%;
+        float: left;
+        padding: 1.375rem;
+    }
+
+    &__right {
+        width: 60%;
+        float: right;
+        padding: 1.375rem;
+        position: relative;
+    }
+
+    &__right::before {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 100%;
+        background: #929292;
+        left: 0;
+        border: 1px solid #777;
+    }
+
+    .profile-text {
+        margin-bottom: 1.875rem;
+
+        p {
+            font-size: .875rem;
+        }
+    }
+
+    .contact {
+        margin-bottom: 1.875rem;
+
+        li {
+            line-height: 1.875rem;
+            font-size: .9375rem;
+        }
+
+    }
+   
+    .hobbies {
+        li {
+            display: inline-block;
+            padding: .625rem .9375rem;
+            font-size: .9375rem;
+        }
+
+    }
+
+    .education {
+        margin-bottom: 1.875rem;
+
+        &__inst {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: #444;
+        }
+
+        &__type {
+            font-size: 1rem;
+
+            & span {
+                font-size: .875rem;
+            }
+        }
+
+        &__year {
+            font-size: .875rem;
+
+        }
+
+
+    }
+}
+
+.footer {
+    position: relative;
+    display: block;
+    height: 15%;
+
+    &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        display: block;
+        background: $color-two;
+        position: absolute;
+        top: 0;
+        clip-path: polygon(0 6%, 0 65%, 69% 65%);
+
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: $color-one;
+        clip-path: polygon(100% 0, 36% 25%, 118% 108%);
+    }
+}
+
+.skills {
+    li {
+        line-height: 1.5rem;
+        font-size: .875rem;
+    }
+
+    ul ul {
+        padding-top: .3125rem;
+    }
+}

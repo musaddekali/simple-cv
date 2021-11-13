@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 100%;
+  background: #f3f3f3;
+}
+
+h1,
+h2,
+h3 {
+  color: #444;
+}
+
+.wrapper {
+  display: block;
+  width: 663px;
+  height: 931px;
+  border: 1px solid #c9c9c9;
+  margin: auto;
+  overflow: hidden;
+}
+
+.main {
+  margin-bottom: 30px;
+}
+
+.header {
+  position: relative;
+  height: 20%;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.header::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #047fb3e0;
+  clip-path: polygon(0 -50%, 0 100%, 74% 25%);
+}
+.header::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: #02497fc9;
+  position: absolute;
+  top: 0;
+  clip-path: polygon(100% 0%, 57% 0%, 100% 45%);
+}
+.header .profile {
+  position: absolute;
+  width: 20%;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  bottom: -15px;
+  left: 28px;
+}
+
+.h-title {
+  position: absolute;
+  right: 24px;
+  bottom: -10px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.h-title__small {
+  font-size: 20px;
+  font-weight: bold;
+}
+.h-title__big {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.middle {
+  position: relative;
+}
+.middle * {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.middle .title {
+  font-size: 1.25rem;
+  margin-bottom: 0.625rem;
+  color: #047fb3e0;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.middle i {
+  padding-right: 0.5rem;
+  color: #047fb3e0;
+}
+.middle__left {
+  width: 40%;
+  float: left;
+  padding: 1.375rem;
+}
+.middle__right {
+  width: 60%;
+  float: right;
+  padding: 1.375rem;
+  position: relative;
+}
+.middle__right::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  background: #929292;
+  left: 0;
+  border: 1px solid #777;
+}
+.middle .profile-text {
+  margin-bottom: 1.875rem;
+}
+.middle .profile-text p {
+  font-size: 0.875rem;
+}
+.middle .contact {
+  margin-bottom: 1.875rem;
+}
+.middle .contact li {
+  line-height: 1.875rem;
+  font-size: 0.9375rem;
+}
+.middle .hobbies li {
+  display: inline-block;
+  padding: 0.625rem 0.9375rem;
+  font-size: 0.9375rem;
+}
+.middle .education {
+  margin-bottom: 1.875rem;
+}
+.middle .education__inst {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #444;
+}
+.middle .education__type {
+  font-size: 1rem;
+}
+.middle .education__type span {
+  font-size: 0.875rem;
+}
+.middle .education__year {
+  font-size: 0.875rem;
+}
+
+.footer {
+  position: relative;
+  display: block;
+  height: 15%;
+}
+.footer::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: #02497fc9;
+  position: absolute;
+  top: 0;
+  clip-path: polygon(0 6%, 0 65%, 69% 65%);
+}
+.footer::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #047fb3e0;
+  clip-path: polygon(100% 0, 36% 25%, 118% 108%);
+}
+
+.skills li {
+  line-height: 1.5rem;
+  font-size: 0.875rem;
+}
+.skills ul ul {
+  padding-top: 0.3125rem;
+}
+
+/*# sourceMappingURL=cv.css.map */
